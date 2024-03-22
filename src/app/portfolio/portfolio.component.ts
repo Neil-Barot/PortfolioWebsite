@@ -13,10 +13,23 @@ export class PortfolioComponent implements OnInit {
   
   projects = {} as Project[];
 
+  isCollapsed: boolean = true;
+  typeScript = false;
+
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Neil Barot - Portfolio');
   }
   ngOnInit(): void {
     this.projects = this.projectService.GetProjects();
+  }
+
+  Filter() {
+    let filterTags: Tag[] = [];
+
+    if (this.typeScript) {
+      filterTags.push(Tag.Typescript);
+    }
+
+    this.projects = this.projectService.GetProjectsByFilter(filterTags);
   }
 }
