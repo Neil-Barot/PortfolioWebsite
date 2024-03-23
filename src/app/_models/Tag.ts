@@ -5,7 +5,7 @@ export class Tag {
     static readonly HTML = new Tag('HTML', 'darkgreen');
     static readonly CSS = new Tag('CSS', 'Purple');
     static readonly CompVision = new Tag('Computer Vision', 'blue');
-    static readonly Jave = new Tag('Java', 'orange');
+    static readonly Java = new Tag('Java', 'orange');
     static readonly ASPNET = new Tag('ASP.Net', 'lightblue');
     static readonly Nodejs = new Tag('Node.js', 'brown');
     static readonly Docker = new Tag('Docker', 'magenta');
