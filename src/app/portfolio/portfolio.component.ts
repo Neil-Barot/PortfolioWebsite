@@ -71,4 +71,21 @@ export class PortfolioComponent implements OnInit {
 
     this.projects = this.projectService.GetProjectsByFilter(filterTags);
   }
+
+  clearAll() {
+    let filterTags: Tag[] = [];
+
+    this.typeScript = false;
+    this.python = false;
+    this.html = false;
+    this.css = false;
+    this.java = false;
+    this.sql = false;
+    this.angular = false;
+    this.react = false;
+    this.nodejs = false;
+    this.docker = false;
+
+    this.projects = this.projectService.GetProjectsByFilter(filterTags);
+  }
 }
