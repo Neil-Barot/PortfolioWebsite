@@ -9,6 +9,7 @@
             <div class="border mb-2 shadow-sm" style="width: 250px">
                 <form>
                     <div class="row mx-0">
+
                         <div class="col">
                             <small><b>Languages:</b></small>
                             <div class="form-group">
@@ -22,12 +23,49 @@
                                     >
                                     <label for="form-check-label small">TypeScript</label>
                                 </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)] = 'typeScript'
+                                        (change)="Filter()"
+                                        name="TypeScript"
+                                    >
+                                    <label for="form-check-label small">TypeScript</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)] = 'typeScript'
+                                        (change)="Filter()"
+                                        name="TypeScript"
+                                    >
+                                    <label for="form-check-label small">TypeScript</label>
+                                </div>
+
+
                             </div>
                         </div>
 
                         <div class="col">
                             <small><b>Frameworks:</b></small>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)] = 'angular'
+                                        (change)="Filter()"
+                                        name="Angular"
+                                    >
+                                    <label for="form-check-label small">Angular</label>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </form>
             </div>
